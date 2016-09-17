@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.incubatoralpha" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+"
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/incubator_alpha_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="IncubatorAlpha"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.main" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivty"
+            android:label="IncubatorAlpha"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.main" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="IncubatorAlpha"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.main" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DiscoverActivity"
+            android:label="IncubatorAlpha" >
+            <intent-filter>
+                <action android:name="android.intent.action.main" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ideaActivity"
+            android:label="@string/title_activity_idea"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.incubatoralpha.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".IncubateActivity"
+            android:label="@string/title_activity_incubate"
+            android:parentActivityName=".ideaActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.incubatoralpha.ideaActivity" />
+        </activity>
+
+        <activity
+            android:name=".EducationActivity"
+            android:label="@string/title_activity_education"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.incubatoralpha.EducationActivity" />
+        </activity>
+
+        <activity
+            android:name=".WorkExperienceActivity"
+            android:label="@string/title_activity_work"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.incubatoralpha.WorkExperienceActivity" />
+        </activity>
+
+        <activity
+            android:name=".SkillActivity"
+            android:label="@string/title_activity_skill"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.incubatoralpha.SkillActivity" />
+        </activity>
+
+        <activity
+            android:name=".messangerActivity"
+            android:label="@string/title_activity_messenger"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.incubatoralpha.MainActivity" />
+        </activity>
+
+        <activity android:name=".peopleMessangerActivity"></activity>
+        <activity android:name=".IdeaSwipeActivity"></activity>
+        <activity android:name=".OtherProfilePageActivity"></activity>
+        <activity android:name=".CreatedIdeaActivity"></activity>
+        <activity android:name=".EditProfileActivity"></activity>
+    </application>
+
+
+</manifest>
